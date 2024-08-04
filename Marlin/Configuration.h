@@ -1874,9 +1874,9 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
-#define AUTO_BED_LEVELING_UBL //JMB
-//#define MESH_BED_LEVELING //JMB
+#define AUTO_BED_LEVELING_BILINEAR //JMB
+//#define AUTO_BED_LEVELING_UBL 
+//#define MESH_BED_LEVELING 
 
 /**
  * Normally G28 leaves leveling disabled on completion. Enable one of
@@ -1954,7 +1954,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 3 //JMB
+  #define GRID_MAX_POINTS_X 5 //JMB
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
